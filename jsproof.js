@@ -24,15 +24,18 @@ const listNFTs = () => {
     console.log(`Eye Color: ${nft.eyeColor}`);
     console.log(`Shirt Type: ${nft.shirtType}`);
     console.log(`Bling: ${nft.bling}`);
+    console.log(`Description: ${nft.description}`);
     console.log(`Date Of Creation: ${nft.creationDate}`);
     console.log('---------------------------------------------------');
   });
+
+  console.log(`Total NFT Supply: ${nfts.length}`);
 };
 
 // Minting some example NFTs with various metadata attributes
-mintNFT("Dribblie", "Anmol", "Blue", "Chainmail", "Golden Crown", "2024-06-01");
-mintNFT("Flyfish Club", "Bobby", "Green", "Robe", "Silver Amulet", "2024-06-02");
-mintNFT("Lucky Block NFTs", "Anurag", "Brown", "Ninja Suit", "Throwing Stars", "2024-06-03");
-mintNFT("Azuki", "Minaz", "Brown", "henley", "golden bracelet", "2024-06-04");
+mintNFT("Dribblie", "Anmol", "Blue", "Chainmail", "Golden Crown", "A unique piece depicting the future of digital art.", "2024-06-01");
+mintNFT("Flyfish Club", "Bobby", "Green", "Robe", "Silver Amulet", "Exclusive membership to a culinary experience.", "2024-06-02");
+mintNFT("Lucky Block NFTs", "Anurag", "Brown", "Ninja Suit", "Throwing Stars", "A lucky charm with a hint of mystery.", "2024-06-03");
+mintNFT("Azuki", "Minaz", "Brown", "Henley", "Golden Bracelet", "A blend of traditional and modern styles.", "2024-06-04");
 
 listNFTs();
